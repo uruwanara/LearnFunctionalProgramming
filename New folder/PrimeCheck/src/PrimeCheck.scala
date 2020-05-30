@@ -15,7 +15,7 @@ object PrimeCheck {
    }
   
      def main(args:Array[String]){
-       println("Insert the Number that want t check : ");
+       println("Insert the Number that want to check : ");
        var numb:Int=readInt();
        
        if(primeCheck(numb)){
