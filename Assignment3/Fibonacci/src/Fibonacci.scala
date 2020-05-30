@@ -9,20 +9,15 @@ object Fibonacci {
   }
 
   def fibPrint(numb:Int):Unit = {
-        if(numb == 0){
-      print(fib(numb)+"\t");
-    }
-        else{
-      fibPrint(numb-1);
-      print(fib(numb)+"\t");
-    }
+        if(numb > 0) fibPrint(numb-1)
+        print(fib(numb)+"\t")
   }
   
   def main(args:Array[String]){
   println("Enter the number of element wants in series: ");
   val numb:Int=readInt();
   
-  println(fibPrint(numb));
+  fibPrint(numb);
   
   }
 }
