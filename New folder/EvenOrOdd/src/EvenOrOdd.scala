@@ -2,11 +2,13 @@ import scala.io.StdIn.readInt
 
 object EvenOrOdd {
   
-  def isOdd(numb:Int):Boolean= numb%2 match{
-    case 1 => true;
-    case 0 => false;
+  def isEven(numb:Int):Boolean= numb match{
+    case 0 => true;
+    case _ => isOdd(numb-1);
     
   }
+
+  def isOdd(numb:Int):Boolean = !(isEven(numb));
   
   def checker(numb:Int):Int={
        println("Insert the Number");
