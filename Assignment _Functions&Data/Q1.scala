@@ -1,4 +1,4 @@
-object negative extends App{
+object neg extends App{
   val r1=new Rational(5,3)
   println(r1.neg)
 }
