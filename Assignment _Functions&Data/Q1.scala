@@ -1,5 +1,5 @@
 object negative extends App{
-  val r1=new Rational(2,3)
+  val r1=new Rational(5,3)
   println(r1.neg)
 }
 class Rational(n:Int,d:Int){
